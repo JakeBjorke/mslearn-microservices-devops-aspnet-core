@@ -29,7 +29,7 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
         registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
         path: .
-        dockerfile: './src/Services/Coupon/CouponAPI/Dockerfile.acr'
+        dockerfile: './src/Services/Coupon/Coupon.API/Dockerfile.acr'
         repository: 'coupon.api'
         tags: 'linux-latest'
         push: true
