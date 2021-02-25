@@ -43,6 +43,6 @@ jobs:
         --install eshoplearn-coupon
         --namespace=default
         --set registry=${{ secrets.REGISTRY_LOGIN_SERVER }}
-        --set imagePullPolicy-Always
+        --set imagePullPolicy=Always
         --set host=${{ secrets.IP_ADDRESS }}
         --set protocol=http './deploy/k8s/helm-simple/coupon'
